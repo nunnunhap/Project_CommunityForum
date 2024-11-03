@@ -1,4 +1,4 @@
-package com.forum.basic.question;
+package com.forum.basic.board;
 
 import org.springframework.stereotype.Service;
 
@@ -6,10 +6,10 @@ import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-public class QuestionService {
+public class BoardService {
 	
 	// DI
-	public final QuestionMapper questionMapper;
+	public final BoardMapper boardMapper;
 	
 	
 	

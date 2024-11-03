@@ -1,4 +1,4 @@
-package com.forum.basic.question;
+package com.forum.basic.board;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import lombok.RequiredArgsConstructor;
 
 @Controller
-@RequestMapping("/question/*")
+@RequestMapping("/board/*")
 @RequiredArgsConstructor
-public class QuestionController {
+public class BoardController {
 	
 	// DI
-	public final QuestionService questionService;
+	public final BoardService boardService;
 	
 	@GetMapping("question_write")
 	public void question_write() {
